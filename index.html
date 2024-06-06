@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #161522; /* Cor de fundo escura */
+            color: #fff; /* Texto principal em branco */
+            margin: 0;
+            padding: 0;
+            margin-bottom: 60px; /* Adicionando espaço extra para o footer */
+        }
+
+        header {
+            background-color: #161522; /* Cor de fundo escura */
+            padding: 20px;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+            color: #FFA500; /* Laranja para o título */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #FFA500; /* Laranja para links */
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #161522; /* Cor de fundo escura */
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #FFA500; /* Laranja para texto no rodapé */
+        }
+
+        .home {
+            text-align: center;
+        }
+
+        /* Adicionando um estilo diferente para os itens de contato */
+        #contato table {
+            width: 100%;
+        }
+
+        #contato table tr {
+            border-bottom: 1px solid #FFA500; /* Linha de separação laranja */
+        }
+
+        #contato table tr:last-child {
+            border-bottom: none; /* Remover borda inferior da última linha */
+        }
+
+        #contato table td {
+            padding: 10px;
+            color: #FFA500; /* Laranja para texto na tabela de contato */
+        }
+
+        #contato table td:first-child {
+            font-weight: bold; /* Texto em negrito para a primeira coluna (rótulos) */
+            width: 25%; /* Largura fixa para os rótulos */
+        }
+
+        /* Estilo especial para os títulos de seção */
+        h2 {
+            color: #FFA500; /* Laranja para títulos de seção */
+        }
+        .portfolio-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .portfolio-images img {
+            width: 300px; /* Largura fixa para as imagens */
+            height: 300px; /* Altura fixa para as imagens */
+            object-fit: cover;
+            border: 2px solid #FFA500; /* Borda laranja */
+            border-radius: 5px;
+        }
+
+        /* Estilos para os botões de alternância de idioma */
+        .lang-toggle {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .lang-toggle button {
+            margin-right: 10px;
+            background-color: #FFA500; /* Cor de fundo laranja */
+            color: #161522; /* Texto escuro */
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .lang-toggle button:hover {
+            background-color: #ffcc80; /* Cor de fundo laranja claro ao passar o mouse */
+        }
+
+        /* Estilo para ocultar seções */
+        .en {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Botões para alternar entre os idiomas -->
+    <div class="lang-toggle">
+        <button onclick="toggleLanguage('pt-br')">Português</button>
+        <button onclick="toggleLanguage('en')">English</button>
+    </div>
+
+    <section id="home" class="home">
+        <h2>Bem-vindo ao Meu Portfólio</h2>
+        <p>Veja alguns dos meus trabalhos abaixo:</p>
+    </section>
+
+    <section id="portfolio" class="pt-br">
+        <h2>Portfólio</h2>
+        <div class="portfolio-images">
+            <img src="https://i.postimg.cc/kGCkj2XD/coloc-AR-NO-PORTFOLIO.png" alt="Imagem 1">
+            
+            <img src="https://i.postimg.cc/wTpGYVb7/c9ad16ef-e011-44bc-9aed-531b73e3ba08.jpg" alt="Imagem 2">
+            
+        </div>
+    </section>
+
+    <section id="sobre" class="pt-br">
+        <h2>Sobre Mim</h2>
+        <p>Eu sou um junior em busca de experiência. Já tenho uma curta experiência de um ano como desenvolvedor mobile e mais um ano como desenvolvedor full stack para páginas web.
+            Trabalhei com React JS para o setor de desenvolvimento mobile, usando React JS com Expo, que é uma ferramenta mobile muito útil por ser multiplataforma.
+            Na parte de desenvolvimento web, tenho como ferramentas do back-end PHP e JavaScript, que são ambas ótimas linguagens, mas para o desenvolvimento de sites o PHP é mais vantajoso,
+             por ter ferramentas melhores para a parte de desenvolvimento web.
+        </p>
+    </section>
+
+    <section id="contato" class="pt-br">
+        <h2>Contato</h2>
+        <table>
+            <tr>
+                <td><strong>Nome:</strong></td>
+                <td>Marcos E.A. Pedroso</td>
+            </tr>
+            <tr>
+                <td><strong>Email:</strong></td>
+                <td>marcoseleandropedroso@gmail.com</td>
+            </tr>
+            <tr>
+                <td><strong>Telefone:</strong></td>
+                <td>(54) 996073269</td>
+            </tr>
+            <tr>
+                <td><strong>Endereço:</strong></td>
+                <td>Loteamento Bela Morada, São Domingos Do Sul, RS, (99274000)</td>
+            </tr>
+            <tr>
+                <td><strong>WeChat:</strong></td>
+                <td>ID: Akihikoakayaba09</td>
+            </tr>
+            <tr>
+                <td><strong>Linkedin:</strong></td>
+                <td><a href="https://www.linkedin.com/in/marcos-eleandro-pedroso-008b78270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Perfil do LinkedIn</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="portfolio" class="en">
+        <h2>Portfolio</h2>
+        <div class="portfolio-images">
+            <img src="https://i.postimg.cc/kGCkj2XD/coloc-AR-NO-PORTFOLIO.png" alt="Image 1">
+            
+            <img src="https://i.postimg.cc/wTpGYVb7/c9ad16ef-e011-44bc-9aed-531b73e3ba08.jpg" alt="Image 2">
+            
+        </div>
+    </section>
+
+    <section id="sobre" class="en">
+        <h2>About Me</h2>
+        <p>I'm a junior seeking experience. I already have a short one-year experience as a mobile developer and another year as a full stack developer for web pages.
+            I worked with React JS for the mobile development sector using React JS language with Expo, which is a very useful mobile tool for being multiplatform.
+            In web development, I have PHP and JavaScript as backend tools, which are both great languages, but for site development PHP is more advantageous,
+            for having better tools for web development part.
+        </p>
+    </section>
+
+    <section id="contato" class="en">
+        <h2>Contact</h2>
+        <table>
+            <tr>
+                <td><strong>Name:</strong></td>
+                <td>Marcos E.A. Pedroso</td>
+            </tr>
+            <tr>
+                <td><strong>Email:</strong></td>
+                <td>marcoseleandropedroso@gmail.com</td>
+            </tr>
+            <tr>
+                <td><strong>Phone:</strong></td>
+                <td>(54) 996073269</td>
+            </tr>
+            <tr>
+                <td><strong>Address:</strong></td>
+                <td>Loteamento Bela Morada, São Domingos Do Sul, RS, (99274000)</td>
+            </tr>
+            <tr>
+                <td><strong>WeChat:</strong></td>
+                <td>ID: Akihikoakayaba09</td>
+            </tr>
+            <tr>
+                <td><strong>Linkedin:</strong></td>
+                <td><a href="https://www.linkedin.com/in/marcos-eleandro-pedroso-008b78270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Marcos E.A. Pedroso</p>
+    </footer>
+
+    <script>
+        function toggleLanguage(lang) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                if (section.classList.contains(lang)) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+
+            // Reativar a seção de portfólio em português se o idioma for alterado para português
+            if (lang === 'pt-br') {
+                var portfolioPt = document.querySelector('#portfolio.pt-br');
+                var portfolioEn = document.querySelector('#portfolio.en');
+                portfolioPt.style.display = 'block';
+                portfolioEn.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
